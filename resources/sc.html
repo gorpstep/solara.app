@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Solara</title>
+</head>
+<body>
+  <p>Loading SoundCloud...</p>
+
+  <script src="/js/neutralino.js"></script>
+  <script>
+    // Step 1: Initialize Neutralino
+    Neutralino.init();
+
+    // Step 2: Wait until Neutralino is ready
+    Neutralino.events.on("ready", () => {
+      // Step 3: Open SoundCloud in default browser
+      Neutralino.os.open("https://soundcloud.com");
+    });
+  </script>
+</body>
+</html>
